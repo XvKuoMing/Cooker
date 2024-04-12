@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+
+  db:
+    image: mysql:8.0
+    container_name: recipes_db
+    environment:
+      MYSQL_ROOT_PASSWORD: "101"
+    ports:
+      - "3306:3306"
+
+
